@@ -1,0 +1,28 @@
+
+<TypingTest>:
+	orientation: 'vertical'
+	score: score_id
+	phase: phase_id
+	input: input_id
+	
+	Label:
+		id: phase_id
+		font_size: 48
+		size_hint_y: 0.4
+		
+	TextInput:
+		size_hint_y: 0.2
+		font_size: 45
+		id: input_id
+		on_focus: root.focused()
+		
+	Button:
+		text: 'Reset'
+		size_hint_y: 0.15
+		on_release: root.show_score()
+		
+	Label:
+		id: score_id
+		text: ''
+		font_size: 60
+
